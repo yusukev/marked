@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Marked - Text Highlighter",
+  "version": "1.0",
+  "description": "Highlight text on any web page with persistent colors",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

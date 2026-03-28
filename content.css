@@ -1,0 +1,35 @@
+#marked-toolbar {
+  position: absolute;
+  z-index: 2147483647;
+  display: flex;
+  gap: 4px;
+  padding: 4px 6px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  animation: marked-fade-in 0.1s ease-out;
+}
+
+@keyframes marked-fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.marked-color-btn {
+  width: 24px;
+  height: 24px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s, border-color 0.1s;
+}
+
+.marked-color-btn:hover {
+  transform: scale(1.2);
+  border-color: #fff;
+}
+
+mark[data-marked] {
+  border-radius: 2px;
+  padding: 0 1px;
+}
