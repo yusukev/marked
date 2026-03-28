@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Marked - Text Highlighter",
+  "name": "Marked - a Minimal Web Highlighter",
   "version": "1.0",
   "description": "Highlight text on any web page with persistent colors",
   "permissions": ["activeTab"],
